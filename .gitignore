@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 *.node_modules
+
+# Ignorar o arquivo de configuração do PostCSS
+postcss.config.js
