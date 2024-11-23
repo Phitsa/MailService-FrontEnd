@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailService</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-justify m-0 box-border">
+    
+   <!-- Barra de navegação-->
+    <header class="bg-gray-600 text-white px-10 py-4 flex justify-between items-center">
+        <div class="logo text-2xl font-bold">MailService ✉</div>
+        <nav class="flex space-x-5">
+            <a href="#" class="text-white text-base no-underline hover:underline">About us</a>
+            <a href="#" class="text-white text-base no-underline hover:underline">Templates</a>
+        </nav>
+        <div class="auth-buttons flex space-x-6">
+            <button class="border-2 border-gray-300 rounded-full bg-gray-600 text-white px-4 py-2 cursor-pointer hover:bg-gray-300 hover:text-black">Sign in</button>
+            <button class="rounded-full border-white bg-gray-800 text-white px-4 py-2 cursor-pointer hover:bg-gray-300 hover:text-black">Login</button>
+        </div>
+    </header>
+    
+  <!-- Area do About -->
+  <section class="about-section flex items-center justify-between px-32 py-20 border-b border-white">
+      <div class="content w-3/6 space-y-7 pl-10">
+          <h2 class="text-3xl font-bold">About us</h2>
+          <p class="text-xl leading-relaxed">
+              We are an innovative platform dedicated to simplifying and enhancing email marketing campaigns for businesses of all sizes.
+              Our mission is to provide fast, reliable, and impactful service, helping clients reach their target audience with precision.
+              We value simplicity and flexibility, offering an intuitive interface that makes sending bulk emails both easy and effective.
+              With our platform, you can seamlessly create, customize, and track marketing campaigns, ensuring each message is delivered at the perfect time and with maximum impact.
+          </p>
+      </div>
+      <div class="about-image w-1/3 h-[500px] overflow-hidden">
+        <img src="../imagens/1004017.png" alt="About Us" class="w-full h-full object-cover">
+    </div> <!-- imagens temporarias apenas para teste -->
+  </section>
+
+  <!-- Area do Templates -->
+  <section class="templates-section flex items-center justify-between px-32 py-20 border-b border-gray-200 bg-gray-300">
+      <div class="content w-full lg:w-3/6 space-y-7 pl-10">
+          <h2 class="text-3xl font-bold">Templates</h2>
+          <p class="text-xl leading-relaxed">
+              Our collection of templates empowers your business to create visually engaging and strategically crafted email campaigns that captivate and convert your audience. Carefully designed with proven marketing strategies, our templates are ready to be customized, allowing you to reflect your brand identity in every message. Easy to edit and personalize, they are fully responsive, ensuring your message displays beautifully on any device. Explore our gallery to find the perfect design to enhance your next campaign!
+          </p>
+          <button class="see-more mt-5 px-8 py-5 bg-gray-500 text-white rounded cursor-pointer hover:bg-gray-900">See more</button>
+      </div>
+      <div class="about-image w-1/3 h-[500px] overflow-hidden">
+        <img src="../imagens/1004017.png" alt="About Us" class="w-full h-full object-cover">
+    </div>  <!-- imagens temporarias apenas para teste -->
+  </section>
+
+  <!-- Templates -->
+  <section class="carousel-section px-10 py-10 text-center">
+    <h2 class="text-2xl font-bold mb-5">Find new templates</h2>
+    <div class="carousel-wrapper relative flex items-center">
+        <div class="carousel group flex overflow-hidden scroll-smooth flex-grow space-x-4">
+            <!-- imagens temporarias apenas para teste -->
+            <div class="carousel-item w-[270px] h-[290px] rounded-md overflow-hidden">
+                <img src="../imagens/starfild.jpg" alt="Image 1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="carousel-item w-[270px] h-[290px] rounded-md overflow-hidden">
+                <img src="../imagens/starfild.jpg" alt="Image 2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="carousel-item w-[270px] h-[290px] rounded-md overflow-hidden">
+                <img src="../imagens/starfild.jpg" alt="Image 3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="carousel-item w-[270px] h-[290px] rounded-md overflow-hidden">
+                <img src="../imagens/starfild.jpg" alt="Image 4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="carousel-item w-[270px] h-[290px] rounded-md overflow-hidden">
+                <img src="../imagens/starfild.jpg" alt="Image 5" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="carousel-item w-[270px] h-[290px] rounded-md overflow-hidden">
+                <img src="../imagens/starfild.jpg" alt="Image 6" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="carousel-item w-[270px] h-[290px] rounded-md overflow-hidden">
+                <img src="../imagens/starfild.jpg" alt="Image 7" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+</section>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+      <p>Contact Us</p>
+  </footer>
+  
+</body>
+</html>
