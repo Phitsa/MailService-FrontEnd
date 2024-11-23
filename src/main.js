@@ -1,3 +1,6 @@
+import './style.css'
+
+
 const changePage      = document.getElementById('changePage')
 const main            = document.getElementById('main')
 const h1              = document.getElementById('h1')
