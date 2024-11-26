@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx,html}"
+    './pages/**/*.{js,ts,jsx,tsx}', // Garanta que o Tailwind analise esses arquivos
+    './components/**/*.{js,ts,jsx,tsx}', // Se você tiver uma pasta components, adicione-a também
   ],
   theme: {
     extend: {

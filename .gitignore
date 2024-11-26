@@ -7,10 +7,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Diretórios de dependências
 node_modules
+
+# Diretórios de build
 dist
 dist-ssr
-*.local
+.next
+.out
+
+# Arquivos de configuração do ambiente
+*.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Diretórios de cache
+.vite
+npm-cache
+yarn-cache
 
 # Editor directories and files
 .vscode/*
