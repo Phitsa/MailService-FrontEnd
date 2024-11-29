@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        cerise: '#db2777', // Cor personalizada
+        cerise: '#cb4667',
+        blackbean: '#320B15',
+        rosepompaduor: '#E9859D',
       },
     },
   },

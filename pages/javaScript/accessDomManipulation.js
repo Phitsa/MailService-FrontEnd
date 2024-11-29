@@ -28,17 +28,15 @@ export function setupPageInteractions(setRegisterErrorMessage, setLoginErrorMess
 
   document.getElementById('registerForm').addEventListener('submit', async function(event) {
     event.preventDefault();
-    const name = document.getElementById('registerName').value;
-    const password = document.getElementById('registerPassword').value;
     const userData = {
-      username: name,
-      password: password
+      username: "anthony.felipe.ff@gmail.com",
+      password: "121205@Afff"
     };
 
     console.log('Sending user data:', userData);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/auth/register`, {
+      const response = await fetch('api/user/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -66,17 +64,17 @@ export function setupPageInteractions(setRegisterErrorMessage, setLoginErrorMess
 
   document.getElementById('loginForm').addEventListener('submit', async function(event) {
     event.preventDefault();
-    const name = document.getElementById('loginName').value;
+    const email = document.getElementById('loginName').value;
     const password = document.getElementById('loginPassword').value;
     const userData = {
-      username: name,
+      username: email,
       password: password
     };
 
     console.log('Sending user data:', userData);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -88,7 +86,7 @@ export function setupPageInteractions(setRegisterErrorMessage, setLoginErrorMess
         const data = await response.json();
         console.log('User loged successfully:', data);
 
-        localStorage.setItem('authToken', data.token);
+        localStorage.setItem('authToken', data.data.token);
 
         window.location.href = '/';
       } else {

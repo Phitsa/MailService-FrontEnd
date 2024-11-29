@@ -26,7 +26,7 @@ const Access = () => {
           <form className="w-3/4 lg:w-2/3" id="registerForm">
             <div className="flex flex-col mb-2">
               <label className="text-gray-600" htmlFor="registerName">Email</label>
-              <input id="registerName" className="bg-gray-200 rounded h-12 p-4 focus:outline-none hover:border hover:border-gray-400 focus:border-gray-700" type="text" placeholder="Type your name" required />
+              <input id="registerEmail" className="bg-gray-200 rounded h-12 p-4 focus:outline-none hover:border hover:border-gray-400 focus:border-gray-700" type="text" placeholder="Type your email" required />
             </div>
             <div className="flex flex-col">
               <label className="text-gray-600" htmlFor="registerPassword">Password</label>
@@ -49,7 +49,7 @@ const Access = () => {
           <form className="w-3/4 lg:w-2/3" action="login" id='loginForm'>
             <div className="flex flex-col mb-2">
               <label className="text-gray-600" htmlFor="loginName">Email</label>
-              <input id="loginName" className="bg-gray-200 rounded h-12 p-4 focus:outline-none hover:border hover:border-gray-400 focus:border-gray-700" type="text" placeholder="Type your name" required />
+              <input id="loginName" className="bg-gray-200 rounded h-12 p-4 focus:outline-none hover:border hover:border-gray-400 focus:border-gray-700" type="text" placeholder="Type your email" required />
             </div>
             <div className="flex flex-col ">
               <label className="text-gray-600" htmlFor="loginPassword">Password</label>
