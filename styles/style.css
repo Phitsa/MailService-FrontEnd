@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary {
+    @apply bg-cerise text-white rounded transition duration-300 ease-in-out border-2 border-cerise;
+}
+
+.primary:hover {
+    @apply text-cerise bg-white;
+}
+
+.secondary {
+    @apply bg-red-500 text-white rounded transition duration-300 ease-in-out border-2 border-cerise;
+}
+
+.secondary:hover {
+    @apply  bg-red-700;
+}
+
+.nav-primary {
+    @apply text-[#FEC0CE] border-2 rounded w-full px-3 py-2 border-[#FEC0CE] transition-all;
+}
+
+.nav-primary:hover {
+    @apply bg-[#A9445D] text-white border-[#A9445D];
+}
+
+.nav-secondary {
+    @apply text-white bg-cerise border-2 rounded w-full px-3 py-2 border-cerise;
+}

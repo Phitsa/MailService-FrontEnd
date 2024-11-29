@@ -1,23 +1,47 @@
 // components/NavBar.js
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const NavBar = () => {
+  const router = useRouter();
+
+  const logout = () => {
+    localStorage.removeItem('authToken');
+    window.location.href = '/access';
+  };
+
+  const getLinkClass = (path) => {
+    return router.pathname === path
+      ? 'nav-secondary'
+      : 'nav-primary';
+  };
+
   return (
-    <nav className="w-44 h-screen bg-[#320b15] flex flex-col">
-      <h2 className="text-white text-4xl font-light w-full h-1/5 flex items-center justify-center">
-        Logo
+    
+    <nav className="w-44 h-screen bg-blackbean flex flex-col p-2">
+      <h2 className="text-white text-3xl font-light w-full p-8 flex justify-center items-center mb-1">
+         MailService
       </h2>
-      <ul className="flex flex-col items-center gap-4">
-        <Link href="/home"className="text-[#FEC0CE] border-2 rounded w-4/5 px-3 py-2 border-[#FEC0CE]">
-            Home
-        </Link>
-        <Link href="/dashboard" className="text-[#FEC0CE] border-2 rounded w-4/5 px-3 py-2 border-[#FEC0CE]">
-            Dashboard
-        </Link>
-        <Link href="/contacts" className="text-[#FEC0CE] border-2 rounded w-4/5 px-3 py-2 border-[#FEC0CE]">
-            Contacts
-        </Link>
-      </ul>
+      <div className='flex flex-col h-full justify-between'>
+        <ul className="flex flex-col items-center gap-4">
+          <Link href="/" className={getLinkClass('/')}>
+              Home
+          </Link>
+          <Link href="/dashboard" className={getLinkClass('/dashboard')}>
+              Dashboard
+          </Link>
+          <Link href="/contacts" className={getLinkClass('/contacts')}>
+              Contacts
+          </Link>
+        </ul>
+        <div className='w-full text-center'>
+          <button onClick={logout} className="text-rosepompaduor text-start"
+          >Log Out</button>
+        </div>  
+      </div> 
     </nav>
   );
 };
